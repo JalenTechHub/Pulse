@@ -1,0 +1,2 @@
+document.querySelectorAll('.mobile-menu nav a').forEach(a=>a.addEventListener('click',()=>{const d=a.closest('details');if(d)d.removeAttribute('open')}));
+document.querySelectorAll('.faq-list details').forEach(d=>d.addEventListener('toggle',()=>{const i=d.querySelector('summary i');if(i)i.textContent=d.open?'−':'+';}));
